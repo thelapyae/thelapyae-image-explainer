@@ -10,6 +10,21 @@ Choose one pattern per image:
 - Route: the avatar carries or connects an idea across a sparse path.
 - System fragment: show only three to five meaningful parts.
 - Mini comic: two or three moments showing a state change.
+- Tutorial panel: numbered step badge, action heading, avatar demonstration,
+  exact command/path card, 2-4 callouts, and a visible result.
+
+## Tutorial Information Hierarchy
+
+Use this reading order:
+
+1. Top-left: `STEP 1`, `STEP 2`, and so on.
+2. Top-center: direct action heading, such as "Skill ကို Download လုပ်ပါ".
+3. Center: avatar performs the action using a physical metaphor.
+4. Side card: exact command, folder path, prompt, or required input.
+5. Bottom strip: one sentence explaining why the step matters or what happens next.
+
+Connect callouts with thin orange arrows. Use blue boxes for commands and paths,
+red only for warnings, and green check marks for successful results.
 
 ## Invent A Metaphor
 

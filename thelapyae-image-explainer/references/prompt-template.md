@@ -33,6 +33,44 @@ complex background, cute mascot styling, watermark, or extra character.
 Invent a fresh metaphor and do not copy an existing illustration composition.
 ```
 
-For Burmese labels, provide exact short Burmese text and limit the image to three
-labels. If spelling is wrong, regenerate with fewer labels or add text later with
-a deterministic graphics tool.
+For Burmese Concept Mode, keep labels concise. If spelling is wrong, regenerate
+with fewer labels or add text later with a deterministic graphics tool.
+
+## Tutorial Mode Template
+
+```text
+Use case: tutorial explainer
+Asset type: information-rich 16:9 horizontal how-to illustration
+Step: {STEP number}
+Action heading: {exact heading}
+Explanation: {one exact short sentence}
+
+Avatar identity:
+Use assets/avatar-reference.png. Preserve Lapyae's face, hair, black T-shirt,
+gray pants, black shoes, and natural adult proportions. Make him demonstrate the
+step rather than stand beside it.
+
+Main demonstration:
+{physical action and objects}
+
+Information blocks:
+- Exact command or path: {exact string}
+- Input callout: {exact text}
+- Process callout: {exact text}
+- Result callout: {exact text}
+- Bottom note: {exact text}
+
+Layout:
+Use 65-80% of the canvas. Put STEP badge at top-left, action heading across the
+top, demonstration in the center, command/path in a blue hand-drawn box, 2-4
+callouts connected by orange arrows, and the result note along the bottom.
+
+Constraints:
+Keep every supplied text string verbatim. Do not invent extra labels. Pure white
+background, hand-drawn editorial style, no realistic UI, no corporate slide
+template, no decorative scenery, no watermark text, and no extra person.
+```
+
+For Burmese Tutorial Mode, allow 6-10 short Burmese text elements. Verify every
+character visually. If image-model text remains wrong, generate without Burmese
+text and add it with a deterministic graphics tool.

@@ -9,6 +9,16 @@ Create 16:9 article illustrations that turn one important idea, process, state, 
 contrast into a memorable hand-drawn scene. Make Lapyae's avatar perform the
 conceptual action instead of standing beside it as decoration.
 
+## Choose A Mode
+
+- Use **Concept Mode** for abstract ideas, article metaphors, states, and opinions.
+  Keep it sparse and communicate one idea visually.
+- Use **Tutorial Mode** for how-to guides, setup instructions, product usage,
+  onboarding, numbered processes, or requests asking what each image is doing.
+  Make each image self-explanatory even when viewed without surrounding text.
+- When uncertain, choose Tutorial Mode if the user asks "how to", "steps",
+  "setup", "install", "use", or "workflow".
+
 ## Load References
 
 - Read `references/avatar-profile.md` before every generation or avatar edit.
@@ -31,6 +41,8 @@ conceptual action instead of standing beside it as decoration.
    - avatar action
    - objects
    - up to five short labels
+   - for Tutorial Mode: step heading, exact action sentence, command/path, and
+     expected result
 5. When the user asks to generate images, proceed without another confirmation.
 6. Generate each illustration separately:
    - Try built-in `image_gen` first.
@@ -40,6 +52,7 @@ conceptual action instead of standing beside it as decoration.
    - Never paste, print, log, or store the API key in the skill or workspace.
    - Use `gemini-3.1-flash-image`, 16:9, and 1K by default.
 7. Keep one core idea per image and invent a fresh physical metaphor.
+   In Tutorial Mode, combine that metaphor with explicit instructional text.
 8. Validate every result against `references/qa-checklist.md`.
 9. Save project images under `assets/<article-slug>-illustrations/` with ordered
    filenames such as `01-input-bottleneck.png`.
@@ -48,7 +61,20 @@ conceptual action instead of standing beside it as decoration.
 
 - Default to 1-3 images for short content and 4-6 for long content.
 - Use English labels unless the user requests Burmese or another language.
-- Keep labels short because generated text can be unreliable.
+- In Concept Mode, keep labels short because generated text can be unreliable.
+- In Tutorial Mode, every image must include:
+  - a numbered `STEP`
+  - a clear action heading
+  - one short explanation sentence
+  - the exact command, path, or input when relevant
+  - two to four callouts showing what goes in, what happens, and what comes out
+- Prefer 6-12 short text elements in Tutorial Mode. Do not make a tutorial image
+  so minimal that its action depends on an external caption.
+- For Burmese tutorials, use exact Burmese strings from the prompt and verify
+  spelling after generation. Regenerate or add text deterministically if wrong.
+- When generated tutorial text is misspelled, use
+  `scripts/overlay_tutorial_text.py` with a Unicode Myanmar font instead of
+  accepting incorrect text.
 - Never imitate a living artist or copy a prior composition.
 - Preserve the avatar identity markers across all images.
 - Report the purpose and saved path of every delivered image.
