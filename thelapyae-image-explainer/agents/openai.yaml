@@ -1,0 +1,4 @@
+interface:
+  display_name: "TheLapyae Image Explainer"
+  short_description: "Explain ideas visually with TheLapyae's avatar"
+  default_prompt: "Use $thelapyae-image-explainer to explain this topic in four clean avatar illustrations."
