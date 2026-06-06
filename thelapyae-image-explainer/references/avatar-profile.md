@@ -13,7 +13,7 @@ Use `assets/avatar-reference.png` as the primary identity reference.
 - Build: slim average adult build with natural proportions
 - Default outfit: plain black crew-neck T-shirt, medium-gray straight pants,
   simple black low-top shoes
-- Style: clean hand-drawn editorial character with restrained flat colors
+- Style: clean hand-drawn editorial character with restrained ink accents
 
 Preserve the face, hair, skin tone, proportions, and default outfit across images.
 

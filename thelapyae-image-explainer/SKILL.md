@@ -23,6 +23,7 @@ conceptual action instead of standing beside it as decoration.
 
 - Read `references/avatar-profile.md` before every generation or avatar edit.
 - Read `references/style-dna.md` when planning or generating illustrations.
+- Read `references/ink-style-calibration.md` before every image generation.
 - Read `references/composition-patterns.md` when choosing a visual metaphor.
 - Read `references/prompt-template.md` immediately before calling `image_gen`.
 - Read `references/qa-checklist.md` after generation.
@@ -70,13 +71,16 @@ conceptual action instead of standing beside it as decoration.
   - two to four callouts showing what goes in, what happens, and what comes out
 - Prefer 6-12 short text elements in Tutorial Mode. Do not make a tutorial image
   so minimal that its action depends on an external caption.
-- For Burmese tutorials, use exact Burmese strings from the prompt and verify
-  spelling after generation. Regenerate or add text deterministically if wrong.
-- When generated tutorial text is misspelled, use
-  `scripts/overlay_tutorial_text.py` with a Unicode Myanmar font instead of
-  accepting incorrect text.
+- For Burmese tutorials, give Gemini exact Burmese strings and visually review
+  the generated result without altering it.
+- Keep Gemini's generated text as part of the original image. Never replace,
+  redraw, overlay, typeset, or post-process text after image generation.
+- If text is imperfect but readable, keep the image. Regenerate the whole image
+  only when the meaning is materially wrong or the user explicitly requests it.
 - Never imitate a living artist or copy a prior composition.
 - Preserve the avatar identity markers across all images.
+- Show one avatar by default. Use repeated poses of the same avatar only when a
+  timeline, before/after comparison, or multi-step sequence clearly requires it.
 - Report the purpose and saved path of every delivered image.
 - Report which image backend and model produced the files.
 

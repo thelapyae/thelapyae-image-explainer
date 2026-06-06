@@ -21,20 +21,22 @@ Labels:
 Use only these short handwritten labels: {labels}
 
 Visual style:
-Pure white background, thin slightly wobbly black ink lines, restrained flat
-colors, sparse orange paths or arrows, red only for warnings or key results,
-blue only for secondary notes, and lots of blank white space. Main scene occupies
-40-60% of the canvas.
+Pure white background. Thin slightly wobbly hand-drawn black ink lines. Keep
+object interiors white. Use orange ink only for paths and arrows, red ink only
+for warnings or emphasis, blue ink only for secondary handwritten notes, and
+light gray only for structural guides or avatar pants. No painted surfaces or
+large flat color fills. Main scene occupies 40-60% of the canvas.
 
 Constraints:
 One image communicates one idea. No title. No presentation slide, formal
 flowchart, commercial vector style, realistic UI, gradient, shadow, texture,
-complex background, cute mascot styling, watermark, or extra character.
+complex background, colored panels, glossy UI, cute mascot styling, watermark,
+or extra character.
 Invent a fresh metaphor and do not copy an existing illustration composition.
 ```
 
-For Burmese Concept Mode, keep labels concise. If spelling is wrong, regenerate
-with fewer labels or add text later with a deterministic graphics tool.
+For Burmese Concept Mode, keep labels concise. If the meaning is materially
+wrong, regenerate with fewer labels. Never replace or overlay the generated text.
 
 ## Tutorial Mode Template
 
@@ -62,15 +64,19 @@ Information blocks:
 
 Layout:
 Use 65-80% of the canvas. Put STEP badge at top-left, action heading across the
-top, demonstration in the center, command/path in a blue hand-drawn box, 2-4
-callouts connected by orange arrows, and the result note along the bottom.
+top, demonstration in the center, command/path in a white box outlined with blue
+ink, 2-4 handwritten callouts connected by orange arrows, and the result note
+along the bottom. Keep boxes and banners white inside.
 
 Constraints:
 Keep every supplied text string verbatim. Do not invent extra labels. Pure white
-background, hand-drawn editorial style, no realistic UI, no corporate slide
-template, no decorative scenery, no watermark text, and no extra person.
+background, black/red/orange/blue ink drawing, no large flat color fills, no
+realistic UI, no corporate slide template, no decorative scenery, no watermark
+text, and no extra person. Generate all text natively in the image. Do not plan
+for any later text overlay, typesetting, or post-processing.
 ```
 
-For Burmese Tutorial Mode, allow 6-10 short Burmese text elements. Verify every
-character visually. If image-model text remains wrong, generate without Burmese
-text and add it with a deterministic graphics tool.
+For Burmese Tutorial Mode, allow 6-10 short Burmese text elements. Visually
+review the generated text but keep it unchanged in the delivered image. If the
+meaning is materially wrong, regenerate the whole image with fewer or shorter
+text elements; never overlay replacement text.
